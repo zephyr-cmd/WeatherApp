@@ -4,11 +4,12 @@ const router = express.Router();
 const {createResValidation}=require("./validations/addResValidator");
 const {validationResult}=require("./../../utils/responseHandler/errorValidation")
 
-const {getWeather}=require("./controller/controller")
+const {getWeather, fetchWeather}=require("./controller/controller")
 
 console.log("inside the restaruant routes---->")
 
 // router.post("/",createResValidation,validationResult,addRestaurant)
-router.get("/",getWeather)
+router.post("/",getWeather)
+router.post("/fetchweather",fetchWeather)
 
 module.exports = router;

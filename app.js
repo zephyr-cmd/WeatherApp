@@ -94,6 +94,6 @@ app.use("/api/v1/modules", require("./modules"));
 
 // error handling middleware
 // app.use(globalErrorHandler);
-const io = require('socket.io')(); //<------
-require('./socket')(io)  
-module.exports = {app,io};
+// const io = require('socket.io')(); //<------
+// require('./socket')(io)  
+module.exports = {app};

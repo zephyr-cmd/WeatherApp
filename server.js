@@ -24,7 +24,7 @@ const server = app.listen(port, () => {
 });
 
 
-io.attach(server); 
+// io.attach(server); 
 
 // handle Globaly  the unhandle Rejection Error which is  outside the express
 // e.g database connection
